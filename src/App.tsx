@@ -421,9 +421,7 @@ function App() {
             <div className="tools-heading">
               <Headline
                 lines={
-                  language === "ES"
-                    ? ["Tecnología con", "propósito."]
-                    : ["Technology with", "purpose."]
+                  language === "ES" ? ["Mi ecosistema", "técnico."] : ["My technical", "ecosystem."]
                 }
               />
               <p data-reveal>
@@ -467,11 +465,7 @@ function App() {
           <SectionLabel number="03" label={language === "ES" ? "FORMACIÓN" : "EDUCATION"} />
           <Headline
             className="section-title"
-            lines={
-              language === "ES"
-                ? ["Una base que", "sigue creciendo."]
-                : ["A foundation", "that keeps growing."]
-            }
+            lines={language === "ES" ? ["Trayectoria", "en desarrollo."] : ["Developing", "path."]}
           />
           <div className="education-list">
             {education.map((item, index) => (
