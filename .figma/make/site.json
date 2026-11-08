@@ -1,0 +1,10 @@
+{
+  "description": "Plantilla de portfolio personal de una página para profesionales de ingeniería informática, con secciones editables para mostrar experiencia, habilidades, proyectos y contacto.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
