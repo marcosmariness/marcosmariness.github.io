@@ -2434,3 +2434,50 @@ html {
     border-radius: 12px;
   }
 }
+
+/* --- Education rows on narrow screens: year + logo / title + centre / result (no overlap) --- */
+@media (max-width: 760px) {
+  .education-row {
+    grid-template-columns: 14px minmax(0, 1fr) auto;
+    row-gap: 16px;
+  }
+
+  .education-row > .timeline-dot {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .education-row > .dates {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .education-row > .education-logo {
+    display: flex;
+    flex-shrink: 0;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .education-row > div:nth-of-type(2) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .education-row > .education-result {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    min-width: 0;
+    text-align: left;
+  }
+
+  .cert-card h3,
+  .cert-card .dates {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
